@@ -3,6 +3,7 @@ import sys
 import sound
 
 def main():
+    wavfile = r"come-on-you-can-do-it.wav"
     print(' ')
     print(' ')
     print('Instructions: Input drinking schedule.')
@@ -38,7 +39,7 @@ def main():
 
             print(' Drink!')
 
-            sound.play()
+            sound.play(wavfile)
 
             time.sleep(1)
 

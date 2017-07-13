@@ -4,12 +4,12 @@
 import pyaudio  
 import wave  
 
-def play():
+def play(wavfile):
     #define stream chunk
     chunk = 1024
 
     #open a wav format music
-    f = wave.open(r"come-on-you-can-do-it.wav","rb")
+    f = wave.open(wavfile,"rb")
     #instantiate PyAudio
     p = pyaudio.PyAudio()
     #open stream
